@@ -10,9 +10,9 @@ import io.ktor.server.netty.*
 import org.jetbrains.exposed.sql.Database
 
 fun main() {
-    val config = HikariConfig("hikari.properties")
-    val dataSource = HikariDataSource(config)
-    Database.connect(dataSource)
+//    val config = HikariConfig("hikari.properties")
+//    val dataSource = HikariDataSource(config)
+//    Database.connect(dataSource)
 //
 //    Database.connect("jdbc:postgresql://localhost:5432/playzone", driver = "org.postgresql.Driver",
 //    "postgres", "bin12216$"
@@ -20,8 +20,8 @@ fun main() {
 
     embeddedServer(Netty, port = System.getenv("PORT").toInt()) {
         configureRouting()
-        configureLoginRouting()
-        configureRegisterRouging()
-        configureSerialization()
+//        configureLoginRouting()
+//        configureRegisterRouging()
+//        configureSerialization()
     }.start(wait = true)
 }
