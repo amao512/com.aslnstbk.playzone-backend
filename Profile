@@ -1,0 +1,1 @@
+web: ./build/install/com.aslnstbk.playzone-backend/bin/com.aslnstbk.playzone-backend
